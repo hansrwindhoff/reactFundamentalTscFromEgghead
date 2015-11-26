@@ -1,6 +1,7 @@
 // https://jsbin.com/zijoxu/edit?js,output
 /// <reference path="./../typings/tsd.d.ts"/>
 import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 
 
 interface State{
@@ -14,6 +15,7 @@ interface Props{
 }
 
 
+export default
 class App extends React.Component<Props,State> {
   constructor(){
     super();
@@ -27,15 +29,19 @@ class App extends React.Component<Props,State> {
   }
   render(){
 
-    return (<div></div>
-			//React.createElement("div", null, React.createElement("input", {type: "text", onChange: this.update.bind(this)}), React.createElement("h1", null, this.state.txt))
-      // <div>
-      // <input type="text"
-      //   onChange={this.update.bind(this)} />
-      // <h1>{this.state.txt}</h1>
-      // </div>
+    return (
+
+      <div>
+      <input type="text" value={this.state.txt}
+        onChange={this.update.bind(this)} />
+      <h1>{this.state.txt}</h1>
+      </div>
     );
   }
 }
+ReactDOM.render(
+  <App cat={5} txt='hello world' />,
+  document.getElementById('app')
+);
 
-export default App
+//export default App

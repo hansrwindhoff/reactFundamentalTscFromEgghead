@@ -1,5 +1,5 @@
 // https://jsbin.com/yirifo/edit?html,js,output
-/// <reference path="typings/tsd.d.ts"/>
+/// <reference path="./../typings/tsd.d.ts"/>
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
