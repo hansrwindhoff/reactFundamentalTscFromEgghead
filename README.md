@@ -1,4 +1,4 @@
-Started converting some lession to typescript 
+Started converting some of the egghead lessions to typescript 
 ---
 
 ```bash
