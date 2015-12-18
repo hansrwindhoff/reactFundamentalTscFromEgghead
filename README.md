@@ -1,3 +1,6 @@
+Started converting some lession to typescript 
+---
+
 ```bash
 npm install babel -g
 npm install
